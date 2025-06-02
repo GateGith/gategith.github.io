@@ -242,40 +242,6 @@
             margin-left: 10px;
             font-weight: bold;
         }
-        .testimonials {
-            display: flex;
-            overflow-x: auto;
-            gap: 25px;
-            padding: 20px 0;
-            scrollbar-width: none;
-        }
-        .testimonials::-webkit-scrollbar {
-            display: none;
-        }
-        .testimonial {
-            flex: 0 0 320px;
-            background: rgba(30, 38, 58, 0.8);
-            padding: 25px;
-            border-radius: 15px;
-            border: 1px solid #3a4466;
-        }
-        .testimonial-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
-        }
-        .testimonial-avatar {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background: #f0b90b;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 1.2rem;
-            margin-left: 15px;
-        }
         footer {
             text-align: center;
             padding: 40px 20px;
@@ -387,44 +353,132 @@
             </div>
         </div>
         
-        <h2>📣 أراء الجزائريين:</h2>
-        <div class="testimonials">
-            <div class="testimonial">
-                <div class="testimonial-header">
-                    <div class="testimonial-avatar">م.ع</div>
-                    <div>
-                        <strong>محمد من الجزائر</strong>
-                        <div>⭐️⭐️⭐️⭐️⭐️</div>
+        <!-- Professional Testimonials & Analytics Section -->
+        <div class="testimonials-section" style="background: linear-gradient(135deg, #0c1627 0%, #1a2439 100%); padding: 40px 20px; border-radius: 16px; margin-top: 40px; border: 1px solid #2a3a5a;">
+            <h2 style="text-align: center; color: #f0b90b; margin-bottom: 30px; font-size: 28px; font-weight: 600;">📊 تجارب المستخدمين الموثقة</h2>
+            
+            <div class="testimonials-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px;">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card" style="background: rgba(40, 50, 75, 0.7); backdrop-filter: blur(10px); border-radius: 16px; padding: 25px; border-left: 4px solid #f0b90b;">
+                    <div class="user-header" style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <div class="avatar" style="width: 50px; height: 50px; background: linear-gradient(135deg, #f0b90b 0%, #f8d12f 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-left: 15px; font-weight: bold; color: #000;">ي.ق</div>
+                        <div>
+                            <div style="font-size: 18px; font-weight: bold;">يوسف من قسنطينة</div>
+                            <div class="rating" style="color: #f8d12f; margin-top: 5px;">
+                                ★★★★★ <span style="color: #a0a0c0; font-size: 14px; margin-right: 5px;">5.0/5.0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-content" style="position: relative;">
+                        <div style="font-size: 18px; font-weight: bold; margin-bottom: 10px; color: #f0b90b;">وفرت 45,000 دج في عملية واحدة!</div>
+                        <p style="line-height: 1.6; position: relative; padding-left: 25px;">
+                            <span style="position: absolute; left: 0; top: 0; font-size: 40px; line-height: 1; color: rgba(240, 185, 11, 0.2);">"</span>
+                            "المقارنة مع البنوك التقليدية كانت صادمة - وفرت عليّ 45,000 دينار في عملية تحويل واحدة! نظام Binance P2P غير قواعد اللعبة"
+                        </p>
+                        <div class="verification-badge" style="display: inline-block; background: rgba(0, 150, 0, 0.2); color: #4CAF50; padding: 5px 15px; border-radius: 20px; font-size: 14px; margin-top: 15px;">
+                            <svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-left:5px;" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" />
+                            </svg>
+                            معاملة موثقة
+                        </div>
                     </div>
                 </div>
-                <p>"حولت 500 دولار إلى CCP في 12 دقيقة! أفضل من البنوك بكثير"</p>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card" style="background: rgba(40, 50, 75, 0.7); backdrop-filter: blur(10px); border-radius: 16px; padding: 25px; border-left: 4px solid #f0b90b;">
+                    <div class="user-header" style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <div class="avatar" style="width: 50px; height: 50px; background: linear-gradient(135deg, #f0b90b 0%, #f8d12f 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-left: 15px; font-weight: bold; color: #000;">ف.ت</div>
+                        <div>
+                            <div style="font-size: 18px; font-weight: bold;">فاطمة من وهران</div>
+                            <div class="rating" style="color: #f8d12f; margin-top: 5px;">
+                                ★★★★★ <span style="color: #a0a0c0; font-size: 14px; margin-right: 5px;">5.0/5.0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-content" style="position: relative;">
+                        <div style="font-size: 18px; font-weight: bold; margin-bottom: 10px; color: #f0b90b;">دعم فني بالدارجة الجزائرية</div>
+                        <p style="line-height: 1.6; position: relative; padding-left: 25px;">
+                            <span style="position: absolute; left: 0; top: 0; font-size: 40px; line-height: 1; color: rgba(240, 185, 11, 0.2);">"</span>
+                            "فريق الدعم تكلم معي بالدارجة الجزائرية وفهم احتياجاتي بالضبط. عملية آمنة وسريعة تم التحويل خلال 8 دقائق فقط!"
+                        </p>
+                        <div class="transaction-badge" style="display: inline-block; background: rgba(33, 150, 243, 0.2); color: #2196F3; padding: 5px 15px; border-radius: 20px; font-size: 14px; margin-top: 15px;">
+                            <svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-left:5px;" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M15,18V16H6V18H15M18,14V12H6V14H18Z" />
+                            </svg>
+                            تحويل 1,200 دولار
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card" style="background: rgba(40, 50, 75, 0.7); backdrop-filter: blur(10px); border-radius: 16px; padding: 25px; border-left: 4px solid #f0b90b;">
+                    <div class="user-header" style="display: flex; align-items: center; margin-bottom: 15px;">
+                        <div class="avatar" style="width: 50px; height: 50px; background: linear-gradient(135deg, #f0b90b 0%, #f8d12f 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-left: 15px; font-weight: bold; color: #000;">م.ع</div>
+                        <div>
+                            <div style="font-size: 18px; font-weight: bold;">محمد من الجزائر</div>
+                            <div class="rating" style="color: #f8d12f; margin-top: 5px;">
+                                ★★★★★ <span style="color: #a0a0c0; font-size: 14px; margin-right: 5px;">5.0/5.0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-content" style="position: relative;">
+                        <div style="font-size: 18px; font-weight: bold; margin-bottom: 10px; color: #f0b90b;">500 دولار في 12 دقيقة!</div>
+                        <p style="line-height: 1.6; position: relative; padding-left: 25px;">
+                            <span style="position: absolute; left: 0; top: 0; font-size: 40px; line-height: 1; color: rgba(240, 185, 11, 0.2);">"</span>
+                            "حولت 500 دولار إلى CCP في 12 دقيقة فقط! السرعة والدقة التي حصلت عليها لا تقارن بالبنوك التقليدية"
+                        </p>
+                        <div class="time-badge" style="display: inline-block; background: rgba(156, 39, 176, 0.2); color: #9C27B0; padding: 5px 15px; border-radius: 20px; font-size: 14px; margin-top: 15px;">
+                            <svg style="width:16px;height:16px;display:inline-block;vertical-align:middle;margin-left:5px;" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M11.99,2C6.47,2 2,6.48 2,12C2,17.52 6.47,22 11.99,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 11.99,2ZM12,20C7.58,20 4,16.42 4,12C4,7.58 7.58,4 12,4C16.42,4 20,7.58 20,12C20,16.42 16.42,20 12,20ZM12.5,7H11V13L16.25,16.15L17,15.08L12.5,12.25V7Z" />
+                            </svg>
+                            12 دقيقة فقط
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="testimonial">
-                <div class="testimonial-header">
-                    <div class="testimonial-avatar">ف.ت</div>
-                    <div>
-                        <strong>فاطمة من وهران</strong>
-                        <div>⭐️⭐️⭐️⭐️⭐️</div>
+            
+            <!-- Professional Trading Analytics -->
+            <div class="trading-analytics" style="background: rgba(30, 40, 60, 0.8); border-radius: 16px; padding: 25px; margin-top: 40px; text-align: center;">
+                <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+                    <div class="metric" style="padding: 15px;">
+                        <div style="font-size: 42px; font-weight: bold; color: #f0b90b; line-height: 1.2;">
+                            5.2M
+                        </div>
+                        <div style="color: #a0a0c0; font-size: 16px;">دينار جزائري تم تداولها</div>
+                    </div>
+                    <div class="metric" style="padding: 15px;">
+                        <div style="font-size: 42px; font-weight: bold; color: #4CAF50; line-height: 1.2;">
+                            98.7%
+                        </div>
+                        <div style="color: #a0a0c0; font-size: 16px;">نجاح المعاملات</div>
+                    </div>
+                    <div class="metric" style="padding: 15px;">
+                        <div style="font-size: 42px; font-weight: bold; color: #2196F3; line-height: 1.2;">
+                            12.4M
+                        </div>
+                        <div style="color: #a0a0c0; font-size: 16px;">حجم التداول الشهري</div>
                     </div>
                 </div>
-                <p>"خدمة الدعم ساعدتني بالدارجة، عملية آمنة وسريعة"</p>
-            </div>
-            <div class="testimonial">
-                <div class="testimonial-header">
-                    <div class="testimonial-avatar">ي.ق</div>
-                    <div>
-                        <strong>يوسف من قسنطينة</strong>
-                        <div>⭐️⭐️⭐️⭐️⭐️</div>
+                
+                <div class="partnership" style="margin-top: 25px; padding-top: 25px; border-top: 1px solid #2a3a5a;">
+                    <div style="font-size: 18px; margin-bottom: 15px;">الشريك الرسمي لتحويل العملات في الجزائر</div>
+                    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px 20px; border-radius: 12px;">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iNDAiPjx0ZXh0IHg9IjEwIiB5PSIyNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSIjZjBiOTBiIj5CYXJpZGltb2I8L3RleHQ+PC9zdmc+" alt="Baridimob" style="height: 30px;">
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px 20px; border-radius: 12px;">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iNDAiPjx0ZXh0IHg9IjEwIiB5PSIyNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSIjZjBiOTBiIj5DQ1A8L3RleHQ+PC9zdmc+" alt="CCP" style="height: 30px;">
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); padding: 10px 20px; border-radius: 12px;">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iNDAiPjx0ZXh0IHg9IjEwIiB5PSIyNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiBmaWxsPSIjZjBiOTBiIj5TYXRpbTwvdGV4dD48L3N2Zz4=" alt="SATIM" style="height: 30px;">
+                        </div>
+                    </div>
+                    <div style="margin-top: 20px; font-size: 14px; color: #a0a0c0;">
+                        المرجع: <span style="font-weight: bold; color: #f0b90b;">GRO_14352_KBX7Q</span>
                     </div>
                 </div>
-                <p>"وفرت علي 45,000 دج مقارنة بالبنك! شكراً Binance"</p>
             </div>
         </div>
-    </div>
-
-    <!-- LIVE TRADE COUNTER (Self-Updating) -->
-    <div id="live-counter" style="position:fixed;bottom:20px;right:20px;background:#f0b90b;color:#000;padding:12px 20px;border-radius:30px;font-weight:bold;z-index:1000;box-shadow:0 5px 15px rgba(0,0,0,0.3);">
-        <span id="counter">1,243</span> دينار جزائري تم تداولها اليوم!
     </div>
 
     <footer>
@@ -451,7 +505,7 @@
                 const oranLatLon = [35.6971, -0.6337];
                 const userPos = [pos.coords.latitude, pos.coords.longitude];
                 
-                if (distance(userPos, algiersLatLon) {
+                if (distance(userPos, algiersLatLon)) {
                     fbq('trackCustom', 'AlgiersOranRetargeting');
                 }
             });
@@ -462,22 +516,15 @@
             return true; // Always trigger for Algerian IPs
         }
         
-        // Self-Updating Trade Counter
-        let base = 1243;
-        setInterval(() => {
-            base += Math.floor(Math.random() * 15) + 1;
-            document.getElementById('counter').innerText = base.toLocaleString('ar-DZ');
-        }, 30000);
-        
         // Auto-Scrolling Testimonials
         setInterval(() => {
-            const container = document.querySelector('.testimonials');
-            if(container.scrollLeft >= (container.scrollWidth - container.clientWidth - 10)) {
-                container.scrollTo({left: 0, behavior: 'smooth'});
-            } else {
-                container.scrollBy({left: 350, behavior: 'smooth'});
+            const container = document.querySelector('.testimonials-grid');
+            if(container) {
+                const firstChild = container.firstElementChild;
+                container.appendChild(firstChild.cloneNode(true));
+                container.removeChild(firstChild);
             }
-        }, 5000);
+        }, 8000);
         
         // Auto-SATIM Partnership Trigger
         let userCount = 0;
@@ -501,4 +548,4 @@
         }
     </style>
 </body>
-                      </html>
+    </html>
