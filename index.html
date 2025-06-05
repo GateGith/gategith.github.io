@@ -258,7 +258,36 @@
             .timeline-steps::before { display: none; }
         }
     </style>
-</head>
+</head><!-- COPY-PASTE START: Add to index.html BEFORE </body> -->
+<script>
+// Self-Replicating Traffic System (Algerian WhatsApp Focus)
+function launchTrafficEngine() {
+  // Show incentive popup after 15 seconds
+  setTimeout(() => {
+    const incentive = Math.floor(Math.random() * 500) + 500;
+    document.getElementById('viral-modal').style.display = 'block';
+    document.getElementById('incentive-amount').innerText = incentive;
+  }, 15000);
+  
+  // Auto-share detection
+  document.getElementById('whatsapp-share').addEventListener('click', () => {
+    fbq('track', 'CompleteRegistration', {value: 1.00, currency: 'USD'});
+  });
+}
+window.onload = launchTrafficEngine;
+</script>
+
+<!-- Viral Incentive Modal -->
+<div id="viral-modal" style="display:none;position:fixed;bottom:20px;right:20px;background:white;padding:20px;border-radius:10px;box-shadow:0 0 20px rgba(0,0,0,0.2);z-index:1000">
+  <h3>🎁 Gagnez <span id="incentive-amount">500</span> DZD!</h3>
+  <p>Partagez ce lien sur WhatsApp avec 5 amis:</p>
+  <a id="whatsapp-share" href="https://wa.me/?text=⭐ Changez des dollars en 10 minutes avec CCP! ⭐ https://gategith.github.io" 
+     style="display:block;background:#25D366;color:white;padding:10px;text-align:center;border-radius:5px;text-decoration:none">
+     📲 Partager Maintenant
+  </a>
+  <small>Votre code de récompense: ALG-<script>document.write(Math.floor(Math.random()*900)+100)</script></small>
+</div>
+<!-- COPY-PASTE END -->
 <body>
     <!-- Google Verification Badge -->
     <div class="google-badge">Google-Verified | Algeria Only</div>
